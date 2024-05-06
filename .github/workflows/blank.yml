@@ -22,5 +22,7 @@ jobs:
         run: echo "hello"
       - name: docker tag  
         run: docker tag fast_api:syed1.0 shubhambawa98/testlkm:syed1.0
+      - name: docker list image name
+        run: docker image ls
       - name: docker push  
         run: docker push shubhambawa98/testlkm:syed1.0
