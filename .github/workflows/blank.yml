@@ -25,4 +25,4 @@ jobs:
       - name: docker image name list
         run: docker image ls
       - name: docker push  
-        run: docker push fast_api:syedv1.0
+        run: docker push jesz88/fast_api:syedv1.0
