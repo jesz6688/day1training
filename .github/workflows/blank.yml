@@ -8,7 +8,7 @@ on:
 jobs:
   Buildandpushdocker:
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: qa
     steps:
       - name: gitclone 
         run: git clone https://github.com/Shubhambawa98/testenv.git
