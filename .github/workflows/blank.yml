@@ -17,11 +17,11 @@ jobs:
       - name: docker login 
         run: docker login -u ${{secrets.DOCKERHUBUSERNAME}} -p ${{secrets.DOCKERHUBPASSWORD}}
       - name: docker build 
-        run: cd testenv && docker build -t fast_api:v1.0 .
+        run: cd testenv && docker build -t jesz88/fast_api:v1.0 .
       - name: test
         run: echo "hello"
       #- name: docker tag  
-      #  run: docker tag fast_api:latest fast_api:v1
+      #  run: docker tag jesz88/fast_api:latest jesz88/fast_api:v1
       - name: docker image name list
         run: docker image ls
       - name: docker push  
