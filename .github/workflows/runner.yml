@@ -8,7 +8,7 @@ on: [push]
 jobs:
   windows-check:
  
-    runs-on: windows-runner
+    runs-on: Windows
     strategy:
       matrix:
         python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
@@ -25,7 +25,7 @@ jobs:
         
   linux-check:
    
-      runs-on: linux-runner
+      runs-on: Linux
       strategy:
         matrix:
           python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
