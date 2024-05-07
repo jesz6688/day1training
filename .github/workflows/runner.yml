@@ -11,7 +11,7 @@ jobs:
     runs-on: linux-runner
     strategy:
       matrix:
-        python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
  
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
     runs-on: windows-runner
     strategy:
       matrix:
-        python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
  
     steps:
       - uses: actions/checkout@v4
