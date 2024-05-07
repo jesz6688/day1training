@@ -6,7 +6,7 @@ name: Python package
 on: [push]
  
 jobs:
-  Build:
+  build:
  
     runs-on: linux-runner
     strategy:
@@ -22,5 +22,3 @@ jobs:
       # You can test your matrix by printing the current Python version
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
-
-			
